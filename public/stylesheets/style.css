@@ -1,0 +1,290 @@
+html,
+body,
+div,
+section,
+article,
+ul,
+li {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+header {
+  width: 100%;
+  z-index: 9999;
+}
+.logo {
+  background: #000;
+  color: #fff;
+  font-weight: 300;
+  height: 2em;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  line-height: 2em;
+}
+.main {
+  margin: 10px;
+  content: "";
+  display: table;
+  clear: both;
+}
+.social {
+  height: 70px;
+}
+.social > ul {
+  width: 210px;
+  margin: 0 auto;
+}
+.social > ul > li {
+  display: inline-block;
+  margin: 10px;
+}
+.fb,
+.gp,
+.em {
+  background-image: url(/images/social-small.png);
+  background-repeat: no-repeat;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.fb {
+  background-position: 0 0;
+}
+.gp {
+  background-position: -59px 0;
+}
+.em {
+  background-position: -118px 0;
+}
+.main p {
+  margin: 10px;
+  text-indent: 1.5em;
+}
+.featureblock {
+  min-height: 100px;
+  background: #e6e6e6;
+  margin: 10px;
+}
+.sidebar {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.brands {
+  width: 60px;
+  margin: 0 auto;
+}
+.brands > li > a {
+  display: block;
+  background-repeat: no-repeat;
+}
+#html5 {
+  background-image: url(/images/html5-small.png);
+  background-position: 0 0;
+  height: 76px;
+  width: 67px;
+}
+@media screen and (max-width: 600px) {
+  
+}
+@media screen and (min-width: 601px) {
+  .logo {
+    width: 250px;
+  }
+  .social {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+  }
+  .social > ul {
+    width: 630px;
+  }
+  .social > ul > li {
+    margin: 5px;
+  }
+  .main p {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .featureblock {
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
+    box-shadow: 15px 15px 0 0px rgba(0, 0, 0, 0.5);
+    float: left;
+  }
+  .sidebar {
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .brands {
+    width: 100%;
+  }
+  .brands > li {
+    display: inline-block;
+  }
+  .brands > li > a {
+    background-image: url(/images/sidebar-small.png);
+    margin: 20px;
+  }
+  #html5 {
+    background-position: 0 0;
+    height: 76px;
+    width: 67px;
+    margin: 20px 0 20px 20px;
+  }
+  #css3 {
+    background-position: 0 -75px;
+    height: 77px;
+    width: 67px;
+    margin: 20px 0;
+  }
+  #js {
+    background-position: 0 -151px;
+    height: 77px;
+    width: 67px;
+    margin: 20px 20px 20px 0;
+  }
+  #ubuntu {
+    background-position: 0 -232px;
+    height: 35px;
+    width: 150px;
+  }
+  #github {
+    background-position: 0 -268px;
+    height: 85px;
+    width: 100px;
+  }
+  #node {
+    background-position: 0 -362px;
+    height: 37px;
+    width: 136px;
+  }
+  #jquery {
+    background-position: 0 -408px;
+    height: 38px;
+    width: 151px;
+  }
+  #json {
+    background-position: 0 -445px;
+    height: 77px;
+    width: 77px;
+  }
+  #mozilla {
+    background-position: 0 -520px;
+    height: 76px;
+    width: 98px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    width: 70%;
+  }
+  .sidebar {
+    width: 20%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+  }
+  #html5 {
+    margin: 0;
+  }
+  #css3 {
+    margin: 0;
+  }
+  #js {
+    margin: 0;
+  }
+  /*
+    .fb, .gp, .em {
+      background-image: url(/images/social.png);
+      height: 112px;
+      width: 112px;
+    }
+    .fb {
+      background-position: 0 0;
+    }
+    .gp {
+      background-position: -59px 0;
+    }
+    .em {
+      background-position: -118px 0;
+    }
+    */
+}
+@media screen and (min-width: 1441px) {
+  .main {
+    margin-left: 10%;
+    width: 60%;
+  }
+  .sidebar {
+    margin-right: 10%;
+    width: 15%;
+  }
+}
+/**
+.container {
+  margin: 0 auto;
+}
+
+  .logo {
+    position: fixed;
+    top: 0;
+  }
+
+.gp {
+  background-position: -132px 0;
+}
+.em {
+  background-position: -262px 0;
+}
+
+.sidebar {
+  float:right;
+}
+.brands > li {
+  background-image: url(/images/sidebar.png);
+  display: inline-block;
+  width: 380px;
+}
+.html5 {
+  background-position:  0 0;
+  height: 125px;
+}
+.ubuntu {
+  background-position: 0 -152px;
+  height: 62px;
+}
+.github {
+  background-position: 0 -262px;
+  height: 160px;
+}
+.node {
+  background-position: 0 -459px;
+  height: 93px;
+}
+.jquery {
+  background-position: 0 -596px;
+  height: 75px;
+}
+.json {
+  background-position: 0 -706px;
+  height: 180px;
+}
+.mozilla {
+  background-position: 0 -918px;
+  height: 190px;
+}
+*/
