@@ -5,5 +5,11 @@ html
     meta(name='viewport', content='width=device-width,initial-scale=1,maximum-scale=1')
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', type='text/css', href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic,700')
+    script(src='javascripts/cufon-yui.js')
+    script(src='javascripts/Marmellata_400.font.js')
   body
     block content
+    script
+      Cufon.replace('h2', 'Marmellata_400');
+      Cufon.now();

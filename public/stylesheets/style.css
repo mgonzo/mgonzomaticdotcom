@@ -14,8 +14,25 @@ ul,
 li {
   list-style: none;
 }
+a {
+  color: #8c008a;
+}
+a:hover {
+  color: #ff00fc;
+}
+a:visited {
+  color: #640063;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 2%;
+  margin-bottom: 0;
+  margin-top: 3%;
+}
 body {
-  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 header {
   width: 100%;
@@ -32,7 +49,7 @@ header {
   line-height: 2em;
 }
 .main {
-  margin: 10px;
+  margin: 2%;
   content: "";
   display: table;
   clear: both;
@@ -46,7 +63,7 @@ header {
 }
 .social > ul > li {
   display: inline-block;
-  margin: 10px;
+  margin: 2%;
 }
 .fb,
 .gp,
@@ -66,14 +83,27 @@ header {
 .em {
   background-position: -118px 0;
 }
-.main p {
-  margin: 10px;
+.main > p {
+  margin: 2%;
+  margin-top: 1%;
   text-indent: 1.5em;
+}
+.main h1 {
+  font-size: 1em;
+}
+.main > ul {
+  margin: 2%;
 }
 .featureblock {
   min-height: 100px;
   background: #e6e6e6;
-  margin: 10px;
+  margin: 2%;
+}
+.featureblock h2 {
+  margin-top: 1%;
+}
+.featureblock ul {
+  margin: 4%;
 }
 .sidebar {
   margin-top: 50px;
@@ -92,6 +122,14 @@ header {
   background-position: 0 0;
   height: 76px;
   width: 67px;
+}
+.note {
+  margin: 2%;
+  font-size: .8em;
+}
+.note h4,
+p {
+  margin: 0;
 }
 @media screen and (max-width: 600px) {
   
@@ -112,21 +150,16 @@ header {
   .social > ul > li {
     margin: 5px;
   }
-  .main p {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
   .featureblock {
     width: 46%;
-    margin-left: 2%;
-    margin-right: 2%;
     box-shadow: 15px 15px 0 0px rgba(0, 0, 0, 0.5);
     float: left;
   }
   .sidebar {
     float: left;
-    margin-left: 2%;
-    margin-right: 2%;
+  }
+  .note {
+    float: left;
   }
   .brands {
     width: 100%;
