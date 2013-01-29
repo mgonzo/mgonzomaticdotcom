@@ -1,0 +1,7 @@
+*.swp
+*~
+*.patch
+dist
+build/dist
+extras
+notes
