@@ -3,5 +3,5 @@
 *.patch
 dist
 build/dist
-extras
+extra
 notes
