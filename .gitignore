@@ -2,7 +2,4 @@
 *.swp
 *~
 *.patch
-dist
-build/dist
-extra
 notes
