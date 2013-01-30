@@ -29,6 +29,16 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+
+// http://stackoverflow.com/questions/7013098/node-js-www-non-www-redirection
+app.get('/*', function (req, res, next) {
+  if (req.headers.host.match(/^www/) !== null) {
+    res.redirect('http://' + req.headers.host.replace(/^www\./,'') + req.url);
+  } else {
+    next();
+  }
+});
+
 app.get('/', routes.index);
 app.get('/users', user.list);
 
